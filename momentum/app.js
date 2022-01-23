@@ -17,3 +17,10 @@ function onLogSubmit(event) {
 loginForm.addEventListener("submit", onLogSubmit);
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if (savedUsername === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLogSubmit);
+} else {
+
+}
