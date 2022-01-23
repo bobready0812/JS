@@ -1,30 +1,18 @@
-const h1 = document.querySelector("div.hello:first child h1");
+const loginForm = document.querySelector("#login-form");
+const loginForm = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-function handleTitleClick() {
-    h1.style.color = "blue";
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLogSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem("username", username);
+    greeting.innerText = 'Hello ${username}';
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleMouseEnter() {
-    h1.innerText = "Mouse is here!";
-}
+loginForm.addEventListener("submit", onLogSubmit);
 
-function handleMouseLeave() {
-    h1.innerText = "Mouse is gone!";
-}
-
-function handleWindowResize() {
-    document.body.style.backgroundColor = "peach";
-}
-
-function handleWindowCopy() {
-    alert("copier!");
-}
-
-function handleWindowOffline() {
-    alert("SOS no WIFI");
-}
-
-h1.addEventListener
-
-window.addEventListener("resize",handleWindowResize)
-window.addEventListener("copy",handleWindowCopy)
+const savedUsername = localStorage.getItem("username");
