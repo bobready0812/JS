@@ -16,4 +16,4 @@ function onLogSubmit(event) {
 
 loginForm.addEventListener("submit", onLogSubmit);
 
-const savedUsername = localStorage.getItemUSERNAME_KEY");
+const savedUsername = localStorage.getItem(USERNAME_KEY);
