@@ -28,3 +28,5 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+parsedToDos.forEach((item)) => console.g
