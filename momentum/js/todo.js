@@ -29,4 +29,4 @@ function handleToDoSubmit(event) {
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
-parsedToDos.forEach((item)) => console.g
+parsedToDos.forEach((item)) => console.g ("this is the tyrnb")
