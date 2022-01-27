@@ -30,4 +30,4 @@ function handleToDoSubmit(event) {
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 parsedToDos.forEach((item)) => console.g ("this is the tyrnb")
-const toDoList = document
+const toDoList = document.getElementById("todo-list");
